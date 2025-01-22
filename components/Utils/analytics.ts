@@ -1,4 +1,4 @@
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 
 export const initGA = () => {
   console.log(
@@ -16,12 +16,12 @@ export const initGA = () => {
   And dont forget to shoot me an email at hellocodewonders@gmail.com if you need me to come do awesome work at your company`,
     'font-family:inherit'
   );
-  ReactGA.initialize('UA-128989337-1');
+  ReactGA.initialize('G-XXXXXXXXXX'); // Replace with your GA4 Measurement ID
 };
 
 export const logPageView = () => {
   ReactGA.set({ page: window.location.pathname });
-  ReactGA.pageview(window.location.pathname);
+  ReactGA.send({ hitType: 'pageview', page: window.location.pathname });
 };
 export const logEvent = (category = '', action = '') => {
   if (category && action) {
@@ -30,6 +30,6 @@ export const logEvent = (category = '', action = '') => {
 };
 export const logException = (description = '', fatal = false) => {
   if (description) {
-    ReactGA.exception({ description, fatal });
+    ReactGA.send({ hitType: 'exception', exDescription: description, exFatal: fatal });
   }
 };

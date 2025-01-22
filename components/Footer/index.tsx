@@ -42,7 +42,7 @@ const FooterLink: React.FC<IFooterLink &
         </Link>
       </FooterStyle>
       <SocialMedia>
-        <a
+        {/* <a
           target="_blank"
           rel="noopener noreferrer"
           href="https://twitter.com/code_wonders"
@@ -50,8 +50,8 @@ const FooterLink: React.FC<IFooterLink &
           title="Twitter Page"
         >
           <Twitter />
-        </a>
-        <a
+        </a> */}
+        {/* <a
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.facebook.com/AdenekanWonderful"
@@ -59,12 +59,12 @@ const FooterLink: React.FC<IFooterLink &
           title="Facebook Page"
         >
           <Facebook />
-        </a>
+        </a> */}
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://linkedin.com/in/codewonders"
-          aria-label="Go To Adenekan Wonderful Linkedin Page"
+          href="https://linkedin.com/in/nextgensultan"
+          aria-label="Go To Ibrahim Sultan Linkedin Page"
           title="Linkedin Page"
         >
           <Linkedin />
@@ -72,13 +72,13 @@ const FooterLink: React.FC<IFooterLink &
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://github.com/adenekan41"
-          aria-label="Go To Adenekan Wonderful Github Page"
+          href="https://github.com/nextgensultan"
+          aria-label="Go To ibrahim sultan Github Page"
           title="Github Page"
         >
           <Github />
         </a>
-        <a
+        {/* <a
           target="_blank"
           rel="noopener noreferrer"
           href="https://dribbble.com/codewonders"
@@ -86,8 +86,8 @@ const FooterLink: React.FC<IFooterLink &
           title="Dribbble Page"
         >
           <Dribble />
-        </a>
-        <a
+        </a> */}
+        {/* <a
           target="_blank"
           rel="noopener noreferrer"
           href="https://instagram.com/codewonders"
@@ -95,7 +95,7 @@ const FooterLink: React.FC<IFooterLink &
           title="Instagram Page"
         >
           <Instagram />
-        </a>
+        </a> */}
       </SocialMedia>
     </>
   );

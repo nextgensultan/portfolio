@@ -24,49 +24,36 @@ const Home = () => {
         <PageWrapper>
           <article>
             <motion.h1
-              data-text="I'm Adenekan Wonderful"
+              data-text="I'm Ibrahim Sultan"
               className="intro__text"
               {...getTransitions(0.1)}
             >
-              <mark className="mark">I&apos;m Adenekan Wonderful</mark>
+              <mark className="mark">I&apos;m Ibrahim Sultan</mark>
             </motion.h1>
             <motion.p {...getTransitions(0.3)}>
               {' '}
-              Your friendly neighborhood frontend developer, UX architect, and
-              JavaScript engineer. I spend my days (and often nights) painting
-              the Internet canvas with{' '}
-              <Link href="/projects" aria-label="Go to Projects Page">
-                Projects
-              </Link>{' '}
-              and lines of code, turning zeroes and ones into immersive,
-              interactive experiences,{' '}
+              I am an <strong>AI enthusiast</strong> with a strong focus on <strong>computer vision</strong>. My work revolves around leveraging the power of AI to solve real-world problems, particularly in the realm of <strong>image processing</strong> and <strong>visual perception</strong>.
             </motion.p>
             <motion.p {...getTransitions(0.5)}>
-              Bona fide photochromic{' '}
-              <Link href="/articles" aria-label="Check out my Lens">
-                Lens
-              </Link>{' '}
-              enthusiast - sunlight or indoors, I&apos;ve got it covered. I
-              tread the path of minimalism, finding beauty in simplicity and
-              order. When I'm not crafting beautiful web experiences, you can
-              find me reading{' '}
-              <Link
-                href="/articles"
-                aria-label="Go to Articles Page And Check What I Read"
-              >
-                Articles
-              </Link>{' '}
-              or swaying to the rhythm of Pop Music & Jazz, losing myself in the
-              captivating flow of melodies. anyways you can{' '}
+              I specialize in creating intelligent systems that can <strong>understand, analyze, and interpret visual data</strong>, such as images and videos. Whether it&apos;s through <strong>image segmentation</strong>, <strong>object detection</strong>, or <strong>facial recognition</strong>, I am passionate about using deep learning techniques to advance the field of computer vision.
+            </motion.p>
+            <motion.p {...getTransitions(0.7)}>
+              Along with my passion for AI, I am also an advocate for <strong>minimalism</strong>, finding elegance in simplicity both in code and design. When I&apos;m not deep-diving into <strong>neural networks</strong> and <strong>convolutional neural networks (CNNs)</strong>, I enjoy reading articles on cutting-edge research in <strong>AI</strong> and staying updated with the latest trends in <strong>machine learning</strong>.
+            </motion.p>
+            <motion.p {...getTransitions(0.9)}>
+              I&apos;m always looking for new ways to push the boundaries of what <strong>AI</strong> can achieve. From <strong>autonomous vehicles</strong> to <strong>augmented reality</strong>, I believe <strong>computer vision</strong> will transform industries and improve lives. If you&apos;re interested in collaborating on <strong>AI-driven projects</strong>, feel free to{' '}
               <Link href="/contact" aria-label="Go to Contact Page">
-                Contact Me
+                <strong>Contact Me</strong>
               </Link>
+              .
             </motion.p>
           </article>
 
           <br />
-          <motion.div {...getTransitions(0.7)}>
-            <FooterLink goto="/about">See More About Me</FooterLink>
+          <motion.div {...getTransitions(1.1)}>
+            <FooterLink goto="/about">
+              <strong>Learn More About My AI Projects</strong>
+            </FooterLink>
           </motion.div>
 
           <br />
@@ -75,6 +62,7 @@ const Home = () => {
     </Layout>
   );
 };
+
 
 const PageSection = styled.div`
   min-height: calc(100vh - 39vh);
